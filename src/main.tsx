@@ -1,67 +1,38 @@
-// Importaciones de React y otros módulos
+// Import necessary libraries and components
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Importaciones de componentes propios
-import Navbar from './NavBar/Components/navBar.tsx'
-import MainMenu from './Header/components/Header.jsx';
-import Footer from './Footer/components/Footer.jsx';  // Footer separado
+// Import your custom components
+import Navbar from './NavBar/Components/navBar'; // Make sure the path and filename are correct
+import MainMenu from './Header/components/Header'; // Adjust according to your file structure
+import Footer from './Footer/components/Footer';
+import TreePUC from './Arbol/Components/NuevoTREE';
+import DepartmentCRUD from './Department/Components/Department';
 
-// Importaciones de estilos adicionales
-import '../app-assets/css/bootstrap.min.css';
-import '../app-assets/css/colors.min.css';
-import '../app-assets/css/components.min.css';
-import '../app-assets/css/plugins/extensions/ext-component-context-menu.min.css';
-// (Continúa importando todos los demás archivos CSS que sean necesarios)
-
-
-import TreePUC from './Arbol/Components/NuevoTREE.tsx'
-import TreePUC2 from './Arbol/Components/TreePUC.tsx';
-import DepartmentCRUD from './Department/Components/Department.tsx'
-
-
-const Layout: React.FC = () => (
-    <> 
-        <MainMenu />  
-        <Navbar />  
-        <DepartmentCRUD /> 
-        <Footer />  
-    </>
+// Define the Layout component which will contain the Router setup
+const Layout = () => (
+  <Router>
+    <MainMenu />
+    <Navbar />
+    <Routes>
+      <Route path="/arbol" element={<TreePUC />} />
+      <Route path="/department" element={<DepartmentCRUD />} />
+    </Routes>
+    <Footer />
+  </Router>
 );
 
-
-
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout />,  
-        children: [
-            
-            {
-                path: '/arbol',
-                element: <TreePUC /> 
-            },
-
-            {
-                path: '/arbol2',
-                element: <TreePUC2 /> 
-            },
-            {
-                path: '/department',
-                element: <DepartmentCRUD /> 
-            },
-            
-            
-            
-        ]
-    }
-]);
-
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
+// Create the root element and render the Layout component wrapped in RouterProvider if using react-router v6
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+      <Layout />
     </React.StrictMode>
-);
+  );
+} else {
+  console.error('Failed to find the root element');
+}

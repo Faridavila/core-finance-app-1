@@ -9,7 +9,7 @@
   </rdf:RDF>
  </metadata>
  <g id="flag" transform="matrix(.512 0 0 1.024 0 .0000020480)">
-  <g id="g571" fill-rule="evenodd" transform="scale(8.3333)">
+  <g id="g571" fillRule="evenodd" transform="scale(8.3333)">
    <g id="g561">
   <path id="path551" d="m0 0 60 30-60 30z"/>
   <path id="path552" d="m120 0-60 30 60 30z"/>

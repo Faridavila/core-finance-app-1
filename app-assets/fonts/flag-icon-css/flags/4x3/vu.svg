@@ -14,7 +14,7 @@
   </clipPath>
  </defs>
  <g id="flag" clip-path="url(#clipPath3976)" transform="matrix(.93750 0 0 .93750 0 .000015180)">
-  <g id="g579" fill-rule="evenodd" transform="matrix(1.0321 0 0 1.0321 0 -.000016001)">
+  <g id="g579" fillRule="evenodd" transform="matrix(1.0321 0 0 1.0321 0 -.000016001)">
    <path id="path553" d="m0 0 336.61 212.6h407.48v70.867h-407.48l-336.61 212.59v-496.06z"/>
    <path id="path561" d="m0 478.35l343.7-219.68h400.39v-21.259h-400.39l-343.7-219.69v31.886l322.44 198.42-322.44 198.43v31.889z" fill="#ff0"/>
    <path id="path562" d="m0 496.06l343.7-219.68h400.39v219.68h-744.09z" fill="#40aa40"/>

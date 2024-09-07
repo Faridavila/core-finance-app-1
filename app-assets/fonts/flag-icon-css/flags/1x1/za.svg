@@ -15,7 +15,7 @@
  </defs>
  <g id="flag">
   <g id="g4048" transform="matrix(1.0248 0 0 1.0248 -71.873 .000013125)" clip-path="url(#clipPath4085)">
-   <g id="g603" fill-rule="evenodd" stroke-width="1pt" transform="matrix(1.9983 0 0 1.9988 -74.837 -1553.7)">
+   <g id="g603" fillRule="evenodd" stroke-width="1pt" transform="matrix(1.9983 0 0 1.9988 -74.837 -1553.7)">
   <path id="path581" d="m37.451 976.39v-148.12l110.28 74.022-110.28 74.103z"/>
   <path id="path597" d="m112.7 1027.3 123.81-83.306h175.98v83.306h-299.79z" fill="#00c"/>
   <path id="path598" d="m104.74 777.32 307.74 0.006v83.32h-175.98s-130.11-84.15-131.76-83.326z" fill="#f00"/>

@@ -14,7 +14,7 @@
   </clipPath>
  </defs>
  <g id="flag" clip-path="url(#clipPath8673)">
-  <g id="g8587" fill-rule="evenodd" transform="translate(39.999)">
+  <g id="g8587" fillRule="evenodd" transform="translate(39.999)">
    <rect id="rect149" height="480" width="720" y="1.2138e-14" x="-39.999" stroke-width="1pt" fill="#f50013"/>
    <rect id="rect280" height="240" width="720" y="1.2138e-14" x="-39.999" stroke-width="1pt" fill="#00189a"/>
    <path id="path279" d="m-39.999 0 413.15 239.69-413.15 239.39 0.001-479.08z" stroke-width="1pt" fill="#feffff"/>

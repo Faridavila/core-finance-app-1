@@ -8,7 +8,7 @@
    </cc:Work>
   </rdf:RDF>
  </metadata>
- <g id="flag" fill-rule="evenodd" stroke-width="1pt">
+ <g id="flag" fillRule="evenodd" stroke-width="1pt">
   <rect id="rect580" height="512" width="512" y="-.0000039058" x=".0040666" fill="#00006a"/>
   <g id="g560" transform="matrix(1.0176 0 0 .95605 -.00099034 -1.0435)">
    <path id="path572" d="m64.501 291.57 514.08 508.63h105.45l-502.98-508.39-116.55-0.24z" transform="matrix(.46237 0 0 .47458 -29.823 -137.28)" fill="#fff"/>

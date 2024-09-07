@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" height="512" width="512">
-  <g fill-rule="evenodd">
+  <g fillRule="evenodd">
     <path fill="red" d="M0 0h512v512H0z"/>
     <path fill="#009a00" d="M63.653 88.407h384.72v335.15H63.653z"/>
     <path d="M63.653 423.56h384.72L256.013 256 63.653 423.56z" fill="#ffca00"/>

@@ -13,7 +13,7 @@
    <rect id="rect4481" fill-opacity="0.67" height="708.66" width="708.66" y="-.0000033379" x="96.887"/>
   </clipPath>
  </defs>
- <g id="flag" fill-rule="evenodd" clip-path="url(#clipPath4479)" transform="matrix(.72249 0 0 .72249 -70 .0000024116)" stroke-width="1pt">
+ <g id="flag" fillRule="evenodd" clip-path="url(#clipPath4479)" transform="matrix(.72249 0 0 .72249 -70 .0000024116)" stroke-width="1pt">
   <rect id="rect171" height="708.66" width="1063" y="0" x="0" fill="#660057"/>
   <path id="path193" d="m216.66 708.32-216.66 0.34v-708.66l215.64 0.11276 139.14 44.743-138.12 43.614 138.12 44.968-138.12 43.615 138.12 44.968-138.12 43.614 138.12 44.968-138.12 43.615 138.12 44.969-138.12 43.614 138.12 44.969-138.12 43.614 138.12 44.968-138.12 43.615 138.12 44.968-138.12 43.615" fill="#fff"/>
  </g>

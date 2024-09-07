@@ -8,7 +8,7 @@
    </cc:Work>
   </rdf:RDF>
  </metadata>
- <g id="flag" fill-rule="evenodd" fill-opacity="1" transform="matrix(1.25 0 0 .93750 0 .00002048)">
+ <g id="flag" fillRule="evenodd" fill-opacity="1" transform="matrix(1.25 0 0 .93750 0 .00002048)">
   <rect id="rect560" height="128" width="512" y="384" x="0" fill="#009a00"/>
   <rect id="rect558" height="128" width="512" y="128" x="0" fill="#00f"/>
   <rect id="rect557" height="128" width="512" y="-.000019656" x="0" fill="#f00"/>
