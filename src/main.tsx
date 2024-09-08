@@ -1,38 +1,49 @@
-// Import necessary libraries and components
+// Importaciones de React y otros módulos
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Import your custom components
-import Navbar from './NavBar/Components/navBar'; // Make sure the path and filename are correct
-import MainMenu from './Header/components/Header'; // Adjust according to your file structure
-import Footer from './Footer/components/Footer';
-import TreePUC from './Arbol/Components/NuevoTREE';
-import DepartmentCRUD from './Department/Components/Department';
+// Importaciones de estilos adicionales
+import '../app-assets/css/bootstrap.min.css';
+import '../app-assets/css/colors.min.css';
+import '../app-assets/css/components.min.css';
+import '../app-assets/css/plugins/extensions/ext-component-context-menu.min.css';
+// (Continúa importando todos los demás archivos CSS que sean necesarios)
 
-// Define the Layout component which will contain the Router setup
-const Layout = () => (
-  <Router>
-    <MainMenu />
-    <Navbar />
-    <Routes>
-      <Route path="/arbol" element={<TreePUC />} />
-      <Route path="/department" element={<DepartmentCRUD />} />
-    </Routes>
-    <Footer />
-  </Router>
+
+import Layout from "./Layout.tsx"; // Importa Layout
+import TreePUC from "./Arbol/Components/NuevoTREE.tsx";
+import TreePUC2 from "./Arbol/Components/TreePUC.tsx";
+import DepartmentCRUD from "./Department/Components/Department.tsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/", // Ruta base
+    element: <Layout />, // Renderiza el componente Layout
+    children: [
+      {
+        path: "/arbol", // Ruta secundaria
+        element: <TreePUC />, // Renderiza TreePUC en la ruta /arbol
+      },
+      {
+        path: "/arbol2", // Ruta secundaria
+        element: <TreePUC2 />, // Renderiza TreePUC2 en la ruta /arbol2
+      },
+      {
+        path: "/department", // Ruta secundaria
+        element: <DepartmentCRUD />, // Renderiza DepartmentCRUD en la ruta /department
+      },
+      {
+        path: "/tree", // Ruta secundaria
+        element: <TreePUC />, // Renderiza TreePUC en la ruta /tree
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
-
-// Create the root element and render the Layout component wrapped in RouterProvider if using react-router v6
-const rootElement = document.getElementById('root');
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <Layout />
-    </React.StrictMode>
-  );
-} else {
-  console.error('Failed to find the root element');
-}
